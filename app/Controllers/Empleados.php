@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\ProductosModel;
 
 class Empleados extends BaseController
 {
@@ -13,7 +14,9 @@ class Empleados extends BaseController
      */
     public function index()
     {
-        return view('empleados/index');
+        
+
+        return view('empleados/index'); //Vista Empleados plantilla
     }
 
     /**
@@ -35,7 +38,10 @@ class Empleados extends BaseController
      */
     public function new()
     {
-        return view('empleados/nuevos');
+        $productosModel = new ProductosModel();
+        $data['productos'] = $productosModel->findAll();
+
+        return view('empleados/nuevos',$data);
 
 
     }

@@ -35,6 +35,13 @@
         <label for="departamento" class="form-label">Departamento</label>
         <select class="form-select" id="departamento" name="departamento" required>
             <option value="">Seleccionar</option>
+            <?php foreach($productos as $producto): ?>
+                <option value="<?= $producto['id']; ?>"><?= $producto['nombre']; ?></option>
+                
+            <?php endforeach; ?>
+
+
+
         </select>
     </div>
 
