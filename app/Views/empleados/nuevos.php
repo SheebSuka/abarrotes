@@ -35,9 +35,9 @@
         <label for="departamento" class="form-label">Departamento</label>
         <select class="form-select" id="departamento" name="departamento" required>
             <option value="">Seleccionar</option>
-            <?php foreach($productos as $producto): ?>
+            <?php foreach ($productos as $producto): ?>
                 <option value="<?= $producto['id']; ?>"><?= $producto['nombre']; ?></option>
-                
+
             <?php endforeach; ?>
 
 
@@ -46,7 +46,7 @@
     </div>
 
     <div class="col-12">
-        <a href="index.html" class="btn btn-secondary">Regresar</a>
+        <a href="<?= base_url('empleados')?>" class="btn btn-secondary">Regresar</a>
         <button type="submit" class="btn btn-primary">Guardar</button>
     </div>
 

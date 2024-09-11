@@ -7,7 +7,9 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 
-//$routes->get('empleados', 'Empleados::index');
-//$routes->get('empleados/new', 'Empleados::new');
+$routes->get('empleados', 'Empleados::index');
+$routes->get('empleados/new', 'Empleados::new');
 
 $routes->resource('empleados', ['placeholder' => '(:num)','except'=>'show']);
+
+$routes->setAutoRoute(true);
