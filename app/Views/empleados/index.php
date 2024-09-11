@@ -4,7 +4,7 @@
 
 <h3 class="my-3" id="titulo">Empleados</h3>
 
-            <a href="nuevo.html" class="btn btn-success">Agregar</a>
+            <a href="<?= base_url('empleados/new')?>" class="btn btn-success">Agregar</a>
 
             <table class="table table-hover table-bordered my-3" aria-describedby="titulo">
                 <thead class="table-dark">

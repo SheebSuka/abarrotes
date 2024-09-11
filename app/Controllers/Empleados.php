@@ -35,7 +35,9 @@ class Empleados extends BaseController
      */
     public function new()
     {
-        //
+        return view('empleados/nuevos');
+
+
     }
 
     /**
