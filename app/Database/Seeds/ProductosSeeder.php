@@ -9,5 +9,29 @@ class ProductosSeeder extends Seeder
     public function run()
     {
         //
+        $data = [
+            [
+                'nombre' => 'abarrotes',
+            ],
+            [
+                'nombre' => 'verduras',
+
+            ],
+            [
+                'nombre' => 'refrigerados',
+
+            ],
+            [
+                'nombre' => 'congelados',
+
+            ],
+            [
+                'nombre' => 'bebidas',
+
+            ],
+
+        ];
+            $this->db->table('productos')->insertBatch($data);
+
     }
 }
